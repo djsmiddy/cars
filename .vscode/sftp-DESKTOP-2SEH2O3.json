@@ -1,0 +1,16 @@
+
+{
+    "name": "Intranet",
+    "host": "10.100.251.123",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "cwstats",
+    "password": "$Y$t3m",
+    "remotePath": "/home/cwstats/intranet/src/EDV_Intranet",
+    "uploadOnSave": true,
+    "downloadOnOpen": true
+      
+}  
+         
+                 
+                                                                                                        
