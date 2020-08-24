@@ -1,4 +1,3 @@
-
 from . import views
 from django.contrib import admin
 from django.urls import path, include
@@ -6,6 +5,9 @@ from django.urls import path, include
 urlpatterns = [
 
     path('', views.home, name='home'),
+    path('getAddCarForm/', views.getAddCarForm, name='getAddCarForm'),
+
+
     
     
 ]

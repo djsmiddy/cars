@@ -1,4 +1,41 @@
-<h1>
+{% extends "base.html" %}
 
-    Home Test Page
-</h1>
+{% block content %}
+
+
+{% load static %}
+ <div class="container-fluid">
+<div class="row">
+<div class="col-lg-8 col-md-8">
+    <div class="card text-center">
+        <div class="card-header">
+          Cars Bought
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">This is where we keep the cars that we have bought</h5></br>
+          <p class="card-text">Click go to add, view and update the cars bought</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+          x cars bought
+        </div>
+      </div>
+  
+
+    
+
+    
+       
+            <div class="card">
+               
+                <div class="card-body">
+                    <h4 class="card-title">Reports  </h4>
+                    <p class="card-text">Run Reports on car data.</p>
+                    <a href="#" class="btn btn-primary">Go Reports</a>
+                </div>
+            </div>
+        
+            </div>
+</div>
+</div>
+{% endblock %}

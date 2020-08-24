@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% load static %}
+
+<div class="container-fluid">
+<div id="workingPage">
+
+
+    <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-info"><i class="ti-wallet"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light">5</h3>
+                                        <h5 class="text-muted m-b-0">Cars Bought/Sold</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-warning"><i class="mdi mdi-cellphone-link"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">$3249</h3>
+                                        <h5 class="text-muted m-b-0">Total Spent </h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">$1795</h3>
+                                        <h5 class="text-muted m-b-0">Total Profit For The Year</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-danger"><i class="mdi mdi-bullseye"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">$687</h3>
+                                        <h5 class="text-muted m-b-0">Total Profit </h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                </div>
+
+                <div id="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                   
+                                    <div class="m-l-10 align-self-center">
+                                        <a><h1 class="m-b-0 font-lgiht">Garage</h1></a>
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <form action="" method="post">
+
+                                    
+                                    <input hidden name="csrfmiddlewaretoken" value="{% csrf_token %}">
+                                    <div class="m-l-10 align-self-center">
+                                        <a><h1 class="m-b-0 font-lgiht">Add Car</h1></a>
+                                        
+                                </form>
+                                <button id="addCar">Add</button>
+                                
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="{% static '/assets/plugins/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="{% static '/assets/plugins/popper/popper.min.js' %}"></script>
+<script src="{% static '/assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="{% static 'js/jquery.slimscroll.js' %}"></script>
+<!--Wave Effects -->
+<script src="{% static 'js/waves.js' %}"></script>
+<!--Menu sidebar -->
+<script src="{% static 'js/sidebarmenu.js' %}"></script>
+<!--stickey kit -->
+<script src="{% static '/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js' %}"></script>
+<script src="{% static '/assets/plugins/sparkline/jquery.sparkline.min.js' %}"></script>
+<!--stickey kit -->
+<script src="{% static '/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js' %}"></script>
+<script src="{% static '/assets/plugins/sparkline/jquery.sparkline.min.js' %}"></script>
+<script src="{% static '/assets/plugins/sparkline/jquery.sparkline.min.js' %}"></script>
+<!--Custom JavaScript -->
+<script src="{% static 'js/custom.min.js' %}"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+<!-- chartist chart -->
+<script src="{% static '/assets/plugins/chartist-js/dist/chartist.min.js' %}"></script>
+<script src="{% static '/assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js' %}"></script>
+<!-- Vector map JavaScript -->
+<script src="{% static '/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js' %}"></script>
+<script src="{% static '/assets/plugins/vectormap/jquery-jvectormap-us-aea-en.js' %}"></script>
+<script src="{% static 'js/cars.js' %}"></script>
+<!-- ============================================================== -->
+<!-- Style switcher -->
+<!-- ============================================================== -->
+<script src="{% static '/assets/plugins/styleswitcher/jQuery.style.switcher.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock %}
